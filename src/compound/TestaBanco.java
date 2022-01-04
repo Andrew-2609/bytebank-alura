@@ -12,8 +12,8 @@ public class TestaBanco {
 
         Conta conta = new Conta();
         conta.depositar(2000.0);
-        conta.titular = primeiroCliente;
+        conta.setTitular(primeiroCliente);
 
-        System.out.println("Nome do titular da conta: " + conta.titular.nome);
+        System.out.println("Nome do titular da conta: " + conta.getTitular().nome);
     }
 }
