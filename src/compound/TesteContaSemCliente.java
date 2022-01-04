@@ -14,6 +14,6 @@ public class TesteContaSemCliente {
 
         contaDoArthur.depositar(1000.0);
 
-        System.out.println("O titular da conta se chama: " + contaDoArthur.titular.nome + " e possui saldo de: " + contaDoArthur.saldo);
+        System.out.println("O titular da conta se chama: " + contaDoArthur.titular.nome + " e possui saldo de: " + contaDoArthur.getSaldo());
     }
 }
