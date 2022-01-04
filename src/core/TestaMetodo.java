@@ -1,5 +1,7 @@
 package core;
 
+import models.Conta;
+
 public class TestaMetodo {
     public static void main(String[] args) {
         Conta conta = new Conta();
