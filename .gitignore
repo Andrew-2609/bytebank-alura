@@ -1,2 +1,6 @@
+# IntelliJ IDEA
 .idea/
 bytebank-alura.iml
+
+# Build output
+out/
