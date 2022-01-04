@@ -10,10 +10,10 @@ public class TesteContaSemCliente {
         System.out.println("O nome do titular da nova conta por enquanto é: " + contaDoArthur.getTitular());
 
         contaDoArthur.setTitular(new Cliente());
-        contaDoArthur.getTitular().nome = "Arthur";
+        contaDoArthur.getTitular().setNome("Arthur");
 
         contaDoArthur.depositar(1000.0);
 
-        System.out.println("O titular da conta se chama: " + contaDoArthur.getTitular().nome + " e possui saldo de: " + contaDoArthur.getSaldo());
+        System.out.println("O titular da conta se chama: " + contaDoArthur.getTitular().getNome() + " e possui saldo de: " + contaDoArthur.getSaldo());
     }
 }
