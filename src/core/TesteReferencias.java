@@ -1,5 +1,6 @@
 package core;
 
+@SuppressWarnings("ALL")
 public class TesteReferencias {
     public static void main(String[] args) {
         Conta primeiraConta = new Conta();
