@@ -5,7 +5,7 @@ import models.Conta;
 
 public class TesteContaSemCliente {
     public static void main(String[] args) {
-        Conta contaDoArthur = new Conta();
+        Conta contaDoArthur = new Conta(12, 4423);
 
         System.out.println("O nome do titular da nova conta por enquanto é: " + contaDoArthur.getTitular());
 

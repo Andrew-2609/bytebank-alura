@@ -5,9 +5,9 @@ import models.Conta;
 @SuppressWarnings("ALL")
 public class TesteReferencias {
     public static void main(String[] args) {
-        Conta primeiraConta = new Conta();
+        Conta primeiraConta = new Conta(12, 3345);
         Conta segundaConta = primeiraConta;
-        Conta terceiraConta = new Conta();
+        Conta terceiraConta = new Conta(12, 3346);
 
         if (primeiraConta == segundaConta) {
             System.out.println("A primeira e a segunda conta são iguais, pois apontam para o mesmo objeto.");
