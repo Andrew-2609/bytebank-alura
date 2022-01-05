@@ -1,4 +1,4 @@
-package inheritanceandpolymorphism;
+package models;
 
 public interface Tributavel {
 
