@@ -1,4 +1,4 @@
-package inheritance;
+package inheritanceandpolymorphism;
 
 import models.ContaCorrente;
 import models.ContaPoupanca;
