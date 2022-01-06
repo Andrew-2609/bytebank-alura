@@ -2,5 +2,6 @@
 .idea/
 bytebank-alura.iml
 
-# Build output
+# Generated output
 out/
+doc/
