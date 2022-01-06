@@ -10,10 +10,8 @@ public class TestaMetodo {
         conta.depositar(50);
         System.out.println(conta.getSaldo());
 
-        boolean conseguiuSacar = conta.sacar(200);
-        if (conseguiuSacar) {
-            System.out.println(conta.getSaldo());
-        }
+        conta.sacar(200);
+        System.out.println(conta.getSaldo());
 
         Conta segundaConta = new Conta(12, 3346);
 
