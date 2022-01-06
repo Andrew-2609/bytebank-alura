@@ -1,5 +1,7 @@
 package models;
 
+import exceptions.SaldoInsuficienteException;
+
 public class Conta {
     private double saldo;
     private int agencia;
@@ -17,12 +19,11 @@ public class Conta {
         this.saldo += valor;
     }
 
-    public boolean sacar(double valor) {
-        if (this.saldo >= valor) {
-            this.saldo -= valor;
-            return true;
+    public void sacar(double valor) {
+        if (this.saldo < valor) {
+            throw new SaldoInsuficienteException("Saldo insuficiente! Atualmente é de: " + this.saldo + ", você está tentando sacar: " + valor);
         }
-        return false;
+        this.saldo -= valor;
     }
 
     public boolean transferir(double valor, Conta destino) {
