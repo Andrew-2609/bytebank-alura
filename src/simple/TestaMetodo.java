@@ -15,11 +15,8 @@ public class TestaMetodo {
 
         Conta segundaConta = new Conta(12, 3346);
 
-        boolean conseguiuTransferir = conta.transferir(100, segundaConta);
-
-        if (conseguiuTransferir) {
-            System.out.println("Saldo da conta original após a transferência: " + conta.getSaldo());
-            System.out.println("Saldo da segunda conta após a transferência: " + segundaConta.getSaldo());
-        }
+        conta.transferir(100, segundaConta);
+        System.out.println("Saldo da conta original após a transferência: " + conta.getSaldo());
+        System.out.println("Saldo da segunda conta após a transferência: " + segundaConta.getSaldo());
     }
 }
