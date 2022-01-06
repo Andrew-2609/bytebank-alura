@@ -2,6 +2,12 @@ package models;
 
 import exceptions.SaldoInsuficienteException;
 
+/**
+ * @author Andrew Monteiro
+ * @version 1.0
+ * <p>
+ * Essa classe representa o modelo de uma Conta
+ */
 public class Conta {
     private double saldo;
     private int agencia;
@@ -9,6 +15,12 @@ public class Conta {
     private Cliente titular;
     private static int total;
 
+    /**
+     * O construtor da Conta recebe como parâmetros uma agência e um número
+     *
+     * @param agencia Número da agência
+     * @param numero  Número da conta
+     */
     public Conta(int agencia, int numero) {
         this.agencia = agencia;
         this.numero = numero;
