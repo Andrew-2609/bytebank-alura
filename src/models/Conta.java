@@ -19,14 +19,14 @@ public class Conta {
         this.saldo += valor;
     }
 
-    public void sacar(double valor) {
+    public void sacar(double valor) throws SaldoInsuficienteException {
         if (this.saldo < valor) {
             throw new SaldoInsuficienteException("Saldo insuficiente! Atualmente é de: " + this.saldo + ", você está tentando sacar: " + valor);
         }
         this.saldo -= valor;
     }
 
-    public void transferir(double valor, Conta destino) {
+    public void transferir(double valor, Conta destino) throws SaldoInsuficienteException {
         this.sacar(valor);
         destino.depositar(valor);
     }

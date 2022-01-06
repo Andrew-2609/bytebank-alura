@@ -1,9 +1,10 @@
 package simple;
 
+import exceptions.SaldoInsuficienteException;
 import models.Conta;
 
 public class TestaMetodo {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SaldoInsuficienteException {
         Conta conta = new Conta(12, 3345);
 
         conta.depositar(500);
