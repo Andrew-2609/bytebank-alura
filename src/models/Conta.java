@@ -26,13 +26,9 @@ public class Conta {
         this.saldo -= valor;
     }
 
-    public boolean transferir(double valor, Conta destino) {
-        if (this.saldo >= valor) {
-            this.sacar(valor);
-            destino.depositar(valor);
-            return true;
-        }
-        return false;
+    public void transferir(double valor, Conta destino) {
+        this.sacar(valor);
+        destino.depositar(valor);
     }
 
     public double getSaldo() {
