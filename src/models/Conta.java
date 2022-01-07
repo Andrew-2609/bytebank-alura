@@ -9,6 +9,7 @@ import exceptions.SaldoInsuficienteException;
  * Essa classe representa o modelo de uma Conta
  */
 public class Conta {
+
     private double saldo;
     private int agencia;
     private int numero;
@@ -74,4 +75,11 @@ public class Conta {
     public static int getTotal() {
         return Conta.total;
     }
+
+    @Override
+    public String toString() {
+        String className = this.getClass().getSimpleName();
+        return className + "(agencia: " + this.agencia + ", numero: " + this.numero + ". saldo: " + this.saldo + ")";
+    }
+
 }
