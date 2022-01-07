@@ -77,6 +77,15 @@ public class Conta {
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Conta)) {
+            return false;
+        }
+        Conta ref = (Conta) obj;
+        return (this.agencia == ref.agencia && this.numero == ref.numero);
+    }
+
+    @Override
     public String toString() {
         String className = this.getClass().getSimpleName();
         return className + "(agencia: " + this.agencia + ", numero: " + this.numero + ". saldo: " + this.saldo + ")";
