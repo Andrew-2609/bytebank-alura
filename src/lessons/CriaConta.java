@@ -1,4 +1,4 @@
-package simple;
+package lessons;
 
 import models.Conta;
 

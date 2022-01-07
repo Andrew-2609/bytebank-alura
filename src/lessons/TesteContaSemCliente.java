@@ -1,4 +1,4 @@
-package compound;
+package lessons;
 
 import models.Cliente;
 import models.Conta;

@@ -1,4 +1,4 @@
-package encapsulated;
+package lessons;
 
 import models.Conta;
 

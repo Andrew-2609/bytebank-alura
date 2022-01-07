@@ -1,5 +1,6 @@
-package exceptions;
+package lessons;
 
+import exceptions.SaldoInsuficienteException;
 import models.ContaCorrente;
 
 public class TesteSacar {

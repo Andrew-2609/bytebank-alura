@@ -1,4 +1,4 @@
-package inheritanceandpolymorphism;
+package lessons;
 
 import models.CalculadorDeImposto;
 import models.ContaCorrente;
