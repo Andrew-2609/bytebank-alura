@@ -8,7 +8,7 @@ import exceptions.SaldoInsuficienteException;
  * <p>
  * Essa classe representa o modelo de uma Conta
  */
-public class Conta {
+public class Conta implements Comparable<Conta> {
 
     private double saldo;
     private int agencia;
@@ -89,6 +89,11 @@ public class Conta {
     public String toString() {
         String className = this.getClass().getSimpleName();
         return className + "(agencia: " + this.agencia + ", numero: " + this.numero + ". saldo: " + this.saldo + ")";
+    }
+
+    @Override
+    public int compareTo(Conta conta) {
+        return Double.compare(this.saldo, conta.saldo);
     }
 
 }
