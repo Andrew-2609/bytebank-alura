@@ -2,12 +2,10 @@ package lessons;
 
 import models.Cliente;
 
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
+import java.io.*;
 
 public class TesteSerializacao {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         Cliente cliente = new Cliente();
         cliente.setNome("Andrew Monteiro");
@@ -17,6 +15,12 @@ public class TesteSerializacao {
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
         objectOutputStream.writeObject(cliente);
         objectOutputStream.close();
+
+        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("cliente.bin"));
+        Cliente clienteLido = (Cliente) objectInputStream.readObject();
+        objectInputStream.close();
+
+        System.out.println(clienteLido.getNome());
 
     }
 }
