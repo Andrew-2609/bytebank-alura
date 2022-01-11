@@ -2,9 +2,7 @@ package models;
 
 import exceptions.SaldoInsuficienteException;
 
-import java.io.Serializable;
-
-public class ContaCorrente extends Conta implements Tributavel, Serializable {
+public class ContaCorrente extends Conta implements Tributavel {
 
     public ContaCorrente(int agencia, int numero) {
         super(agencia, numero);
