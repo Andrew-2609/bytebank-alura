@@ -5,3 +5,4 @@ bytebank-alura.iml
 # Generated output
 out/
 doc/
+**.bin
