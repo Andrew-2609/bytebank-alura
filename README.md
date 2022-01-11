@@ -4,3 +4,7 @@ This is a simple project based on [Alura](https://www.alura.com.br)'s Java OO co
 
 It covers the basics of [Object-Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming) with
 Java.
+
+## Update
+
+This project also contains code based on fundamentals of other Alura courses.
