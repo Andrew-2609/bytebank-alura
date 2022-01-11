@@ -2,13 +2,15 @@ package models;
 
 import exceptions.SaldoInsuficienteException;
 
+import java.io.Serializable;
+
 /**
  * @author Andrew Monteiro
  * @version 1.0
  * <p>
  * Essa classe representa o modelo de uma Conta
  */
-public class Conta implements Comparable<Conta> {
+public class Conta implements Comparable<Conta>, Serializable {
 
     private double saldo;
     private int agencia;
