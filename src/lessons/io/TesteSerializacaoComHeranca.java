@@ -20,7 +20,7 @@ public class TesteSerializacaoComHeranca {
         contaCorrente.depositar(222.3);
 
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("cc.bin"));
-        objectOutputStream.writeObject(cliente);
+        objectOutputStream.writeObject(contaCorrente);
         objectOutputStream.close();
 
     }
