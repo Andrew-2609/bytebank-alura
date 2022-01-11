@@ -14,6 +14,7 @@ public class TesteDesserializacaoComHeranca {
         objectInputStream.close();
 
         System.out.println(contaCorrente);
+        System.out.println(contaCorrente.getTitular()); // should return null
 
     }
 }

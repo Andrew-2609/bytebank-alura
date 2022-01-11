@@ -15,7 +15,7 @@ public class Conta implements Comparable<Conta>, Serializable {
     private double saldo;
     private int agencia;
     private int numero;
-    private Cliente titular;
+    private transient Cliente titular;
     private static int total;
 
     /**
